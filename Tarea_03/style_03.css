@@ -1,0 +1,59 @@
+body{
+   
+   /* background-color: chocolate;*/
+    background-image: url("img/floor2cloud-01.png");
+    font-size: 18px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+h1{
+    background-color: darkslategrey;
+    text-align: center;
+}
+
+p,div,pre{
+text-align: justify;
+padding: 10px;
+color: darkgoldenrod
+;
+
+}
+img{
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+mark{
+   background-color: orange;
+    color: midnightblue;
+}
+ol{
+    color: salmon;
+    padding: 10px;
+    
+}
+.datos
+{
+    color: darkgoldenrod;
+}
+.tg{
+width: 350px;
+height: 150px;
+
+}
+.tg td, .tg th{
+    border: 6px solid rgb(33, 144, 163);
+    padding: 8px;
+    text-align: right;
+    
+}
+.tg tr{background-color: sandybrown;}
+.tg tr:hover {background-color: #ddd;}
+.tg th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: right;
+    background-color: midnightblue;
+    color: white;
+}
