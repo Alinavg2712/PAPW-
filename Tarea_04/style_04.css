@@ -1,0 +1,57 @@
+body{
+    background-image: url("img/marble-01.png");
+}
+.menu
+{
+    list-style-type: none;
+    margin: 0;
+  padding: 0;
+  width: 13%;
+  height: 50%;
+  position:fixed;
+  overflow:auto;
+ 
+  top:0;
+    text-align:center;
+    background-color: lightgrey;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block; 
+}
+.dropdown-content{
+    display: none;
+position: absolute;
+min-width: 200%; 
+z-index: 1; 
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+ li a{
+
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+ li a:hover{
+    background: midnightblue;
+    color:white;
+}
+ li a:link{
+    color:goldenrod;
+}
+.cuerpo{
+    text-align: justify;
+    float: right;
+    width: 70%;
+    margin:10px;
+    padding: 50px 70px 10px 10px;
+    border: 20px 20px 20px 20px;
+    
+}

@@ -48,8 +48,9 @@ height: 150px;
     text-align: right;
     
 }
-.tg tr{background-color: sandybrown;}
-.tg tr:hover {background-color: #ddd;}
+.tg tr:nth-child(2n) {background-color: sandybrown;}
+
+.tg tr:hover {background-color: rgba(235, 3, 3, 0.322); color:white;}
 .tg th {
     padding-top: 12px;
     padding-bottom: 12px;
