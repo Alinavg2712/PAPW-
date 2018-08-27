@@ -1,0 +1,21 @@
+body{
+     background-image: url("img/purple-grey-background-texture.jpg"); 
+}
+
+h1{
+    background-color: papayawhip;
+    text-align: center;
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+    padding: 50px;
+}
+
+form { 
+    margin: 0 auto; 
+    border-top: 15px;
+    border-bottom: 15px;
+    width:250px;
+    }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suma de angulos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body >
+    <h1>Suma angulos internos</h1>    
+    <p>Instrucciones: Calcular el valor de cada ángulo alpha de un polígono regular de n lados</p>
+    <form>
+            <input type="number" id="ang" min="3">
+            <br>
+            <input type="button" onclick="SumAngInt()" value="SumAngInt"><br>
+            <br>
+           
+                    <input type="text" id="angvar"><br>
+                    <input type="button" onclick="SumAngInt2(angvar)" value="SumAngInt2" ><br>
+    </form>
+           
+            <p id="Resultado">Resultado</p>
+            <br>
+            <p>Calcular diagonales  de un polígono de n lados</p>
+            <form>
+                <input type="number" id="dig" min="3"><br>
+                <input type="button" onclick="Diagonal()" value="Diagonal"><br>
+                <p id="Resultado1">Resultado</p>
+            </form>
+
+            <script>
+                function alfa(){
+                        console.log("hola");
+                        alert("adios");
+                }
+
+                function Diagonal()
+                {
+                    var h=document.getElementById("dig").value;
+                    var res=(h*(h-3))/2;
+                    var e=document.getElementById("Resultado1");
+                    e.innerHTML= "° Diagonales="  + res;
+
+                }
+
+                function SumAngInt()
+                {
+                    var f=document.getElementById("ang").value;
+                    var res= (180*(f-2))/f;
+                    var e=document.getElementById("Resultado");
+                    e.innerHTML="SAI ="+res+"°";
+                 
+                }
+                function SumAngInt2(n)
+                {
+                    n=n.value;
+                    var res=(180*(n-2))/n;
+                    var e=document.getElementById("Resultado");
+                    e.innerHTML="SAI ="+res+"°";
+                    return resultado;
+                }
+            </script>
+</body>
+</html>
