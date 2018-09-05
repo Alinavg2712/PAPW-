@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="item.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+</head>
+<body>
+  <header class="header">
+    <!-- <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+             <a href="index.html" class="navbar-brand d-flex align-items-center">
+                   <img src="../img/emoji2-01.png"  alt="Logo" >  
+                     <strong>Album</strong>
+                   </a>
+         
+             <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+             <ul class="navbar-nav px-3">
+               <li class="nav-item text-nowrap">
+                 <a class="nav-link" href="#">Sign out</a>
+               </li>
+             </ul>
+           </nav>!-->
+           <nav class="navbar navbar-toggleable-md navbar-light flex-md-nowrap p-0 ">
+               <a href="index.html" class="navbar-brand d-flex align-items-center">
+                  <img src="../img/emoji2-01.png"  alt="Logo" height="75px" > 
+                     <strong>Bamboozled</strong>
+                   </a>
+               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+             <!--  <a class="navbar-brand p-0 mr-5" href="#"><img src="http://via.placeholder.com/61x14"></a>!-->
+              <!-- <div class="float-left"> <a href="#" class="button-left"><span class="fa fa-fw fa-bars "></span></a> </div>!-->
+              <ul class="navbar-nav px-3">
+                 <li class="nav-item text-nowrap">
+                   <a class="nav-link" href="#">Search</a>
+                 </li>
+               </ul>
+              <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+                 <ul class="navbar-nav">
+                   
+               
+                 
+                 <li class="nav-item dropdown  user-menu">
+                   <a class="nav-link dropdown-toggle" href="profile.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img src="http://via.placeholder.com/160x160" class="user-image" alt="User Image" >
+                     <span class="hidden-xs">Monocub</span>
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="login.html">Sign out</a>
+                     <a class="dropdown-item" href="registro.html">Sign up</a>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+   </header>
+
+   <div class="container-fluid">
+         <div class="row">
+           
+               <aside>
+                   <div class="sidebar left ">
+                     <div class="user-panel">
+                       <div class="pull-left image">
+                         <img src="http://via.placeholder.com/160x160" class="rounded-circle" alt="User Image">
+                       </div>
+                       <div class="pull-left info">
+                         <p>Monocub</p>
+                         <a href="profile.html"><i class="fa fa-circle text-success"></i> Online</a>
+                       </div>
+                     </div>
+                     <ul class="list-sidebar bg-defoult">
+                       <li> <a href="#" data-toggle="collapse" data-target="#dashboard" class="collapsed active" > <i class="fa fa-th-large"></i> <span class="nav-label"> Dashboards </span>  </a>
+                       <ul class="sub-menu collapse" id="dashboard">
+                         <li class="active"><a href="stuff.html">My Stuff</a></li>
+                        
+                   
+                       </ul>
+                     </li>
+                     <li><a href="index.html">  <i class="fa fa-circle"></i> <span class="nav-label">Home</span></a></li>
+                    
+                     
+                     <li><a href="profile.html"> <i class="fa fa-circle"></i><span class="nav-label">My Profile </span></a></li>
+                     <li> <a href="cart.html"><i class="fa fa-diamond"></i> <span class="nav-label">My Cart</span></a> </li>
+                    
+                   <li> <a href="historial.html"><i class="fa fa-circle"></i> <span class="nav-label">History</span></a> </li>
+                 
+                  <p class="middle"><strong>Comics</strong></p>
+
+                  <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">All New-Wolverine</span></a> </li>
+                  <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">All New-X-men</span></a> </li>
+                  <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Generations</span></a> </li>
+                  <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Injustice</span></a> </li>
+                  <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Mighty Thor</span></a> </li>
+                  <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">SpiderGwen</span></a> </li>
+                  <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Supergirl</span></a> </li>
+                  <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">X-men Red</span></a> </li>
+
+             </ul>
+             </div>
+             </aside>
+
+      <div id="cont" class="container">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              
+            </div>
+          </nav>
+                  <h1>  
+                    </h1>
+                      
+                      
+                     
+                      
+                
+                      <div id="colm"class="col-lg-9">
+                         
+                        <div class="card1">
+                         
+                            <svg><rect></rect></svg>
+                            <img id="product" class="card-img-top " src="../img/11.jpg" alt="">
+                         
+                          </div>
+                         
+                          <div class="card-body">
+                            <h3 class="card-title">Comic</h3>
+                            <h4>$4.99</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+                            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                            4.0 stars
+                            <hr>
+                            <div class="quantity">
+                                <label>Quantity</label><br>
+                              <input class="qty"type="number" value="1" max="10">
+                            </div><br>
+                            <div class="btn-group">
+                              <a class="btn icon-btn btn-primary"  href="cart.html" ><span>Add to Cart</span></a>
+                              </div>
+                            
+                            
+                            
+                           
+                          </div>
+                        </div>
+                        
+                        <!-- /.card -->
+              
+                        <div class="card card-outline-secondary my-4">
+                            <svg><rect></rect></svg>
+                          <div class="card-header">
+                            Product Reviews
+                          </div>
+                          <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+                            <hr>
+                            <a href="#" class="btn btn-info">Leave a Review</a>
+                          </div>
+                        </div>
+                        <!-- /.card -->
+              
+                      </div>
+
+
+
+        </div>
+      </div>
+
+      </div>
+</div>
+
+
+
+ <!-- Placed at the end of the document so the pages load faster -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script>window.jQuery || document.write('<script src="../assets/jquery-slim.min.js"><\/script>')</script>
+ <script src="../assets/popper.min.js"></script>
+ <script src="../dist/bootstrap.min.js"></script>
+ <script src="../assets/holder.min.js"></script> 
+</body>
+</html>

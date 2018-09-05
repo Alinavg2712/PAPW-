@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../dist/bootstrap.min.css" rel="stylesheet">
+ 
+    <link rel="stylesheet" type="text/css" media="screen" href="registro.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+   
+</head>
+<body >
+      <header>
+
+      </header>
+               
+        
+                  
+             <div class="container">
+                    <h1 class="text-center">Bamboozled</h1>
+                    <h2 class="text-center">Login Now</h2>
+                <form>
+                    <div class="form-group">
+                     <label for="Inputusername">Username</label>
+                     <input type="text" class="form-control" id="user"  placeholder="Username...">
+                    </div>
+                    <div class="form-group">
+                            <label for="InputAddress">Address</label>
+                            <input type="text" class="form-control" id="InputAddress"  placeholder="Address...">
+                           </div>
+                           <div class="form-group">
+                                <label for="InputFullname">Full Name</label>
+                                <input type="text" class="form-control" id="InputFullname"  placeholder="Fullname...">
+                               </div>
+                              
+        
+                     <div class="form-group">
+                      <label for="InputEmail1">Email address</label>
+                     <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email...">
+                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                     </div>
+                   
+             
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="pass" placeholder="Password...">
+                    </div>
+        
+                   
+                    
+                   
+         
+        
+                        <div class="form-group">
+                            <label for="validatedProfile">Picture profile</label>
+                        <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="validatedProfile" required>
+                                <label class="custom-file-label" for="validatedProfile">Choose file...</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                              </div>
+                        </div>
+                        <div class="form-group">
+                                <label for="validatedCover">Cover profile</label>
+                            <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="validatedCover" required>
+                                    <label class="custom-file-label" for="validatedCover">Choose file...</label>
+                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                  </div>
+                            </div>
+        
+                        
+                            
+                            <br>
+                           
+                            <div class="btn-group">
+                                <a id="enter" class="btn btn-login float-right" href="#"><span>Submit</span></a>
+                                -<!--<button type="button" class="btn btn-sm btn-outline-secondary">View</button>!-->
+                                
+                              </div>
+                                    <input type="reset" value="Reset" class="btn btn-login">
+                               
+                            
+                          
+                     
+                     
+                     
+                     
+                        </form>
+                       
+                     </div>
+                     <footer>
+
+                     </footer>
+
+                     <script>
+            
+                        $(function()
+                        {
+                            $("#enter").click(function()
+                            {
+                                var as;
+                                var es;
+                            var e= $("#user").val();
+                            if( e.length >=6)
+                            {
+                                alert("funciona");
+                                as= true;
+                            }
+                            else{
+                                $("#user").css("background-color","red");
+                           
+                            as= false;
+                                      
+                            };
+            
+                             var i= $("#pass").val();
+                                var mayusc=false;
+                                var numero=false;
+                                var minusc=false;
+                                var tamaño=false;
+            
+                                
+                                if (i.length >= 8){
+                                    for (index = 0; index < i.length; index++) {
+                                        
+                                        if(i.charAt(index).toUpperCase()  == i.charAt(index)  && isNaN(i.charAt(index)))
+                                        {
+                                        mayusc=true;
+                                        
+                                        }
+                                    if (i.charAt(index).toLowerCase()  == i.charAt(index)  && isNaN(i.charAt(index)))
+                                    {
+                                        minusc=true;
+                                        
+                                    }
+                                    if(isNaN(i.charAt(index)) == false)
+                                    {
+                                    
+                                        numero=true;
+                                    }
+                                    }
+                                    tamaño = true; 
+                                }
+                                if(mayusc == true && minusc == true && numero == true && tamaño == true){
+                                alert("funciona");
+                                es= true;
+                                }
+                                else{
+                                    $("#pass").css("background-color","red");
+                                    es= false;
+                                }
+            
+            
+            
+            
+            
+            
+                          
+                          });
+                            
+                        });
+            
+                        
+                        </script>
+           <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/jquery-slim.min.js"><\/script>')</script>
+      <script src="../assets/popper.min.js"></script>
+      <script src="../dist/bootstrap.min.js"></script>
+      <script src="../assets/holder.min.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../dist/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+  
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+        <section class="login-block">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-4 login-sec">
+                                <h1 class="text-center">Bamboozled</h1>
+                                <h2 class="text-center">Login Now</h2>
+                                <form class="login-form" method="POST">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" class="text-uppercase">Username</label>
+                                            <input type="text" id="user" class="form-control" placeholder="Username">
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1" class="text-uppercase">Password</label>
+                                            <input type="password" id="pass"class="form-control" placeholder="Password">
+                                        </div>
+                                        
+                                        
+                                            <div class="form-check">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <small>Remember Me</small>
+                                            </label>
+                                            <div class="btn-group">
+                                                <a id="enter" class="btn btn-login float-right" href="#" ><span>Submit</span></a>
+                                                -<!--<button type="button" class="btn btn-sm btn-outline-secondary">View</button>!-->
+                                                
+                                              </div>
+                                          <!--  <button type="submit" class="btn btn-login float-right">Submit</button>-->
+                                            </div>
+                    
+                                           
+                                    </form>
+                    </div>
+                    <div class="col-md-8 banner-sec">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                             <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              </ol>
+                        <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                    <img class="d-block img-fluid" src="../img/38.jpg" alt="First slide">
+                                         <div class="carousel-caption d-none d-md-block">
+                                                    <div class="banner-text">
+                                                        <h2>This is Heaven</h2>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                                    </div>	
+                                       </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="../img/39.jpg" alt="First slide">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <div class="banner-text">
+                                                    <h2>This is Heaven</h2>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                                </div>	
+                                            </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="../img/40.jpg" alt="First slide">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <div class="banner-text">
+                                                    <h2>This is Heaven</h2>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                                </div>	
+                                            </div>
+                                    </div>
+                        </div>	   
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            </section>
+
+            <script>
+            
+            $(function()
+            {
+                $("#enter").click(function()
+                {
+                    var as;
+                    var es;
+                var e= $("#user").val();
+                if( e.length >=6)
+                {
+                    alert("funciona");
+                    as= true;
+                }
+                else{
+                    $("#user").css("background-color","red");
+               
+                as= false;
+                          
+                };
+
+                 var i= $("#pass").val();
+                    var mayusc=false;
+                    var numero=false;
+                    var minusc=false;
+                    var tamaño=false;
+
+                    
+                    if (i.length >= 8){
+                        for (index = 0; index < i.length; index++) {
+                            
+                            if(i.charAt(index).toUpperCase()  == i.charAt(index)  && isNaN(i.charAt(index)))
+                            {
+                            mayusc=true;
+                            
+                            }
+                        if (i.charAt(index).toLowerCase()  == i.charAt(index)  && isNaN(i.charAt(index)))
+                        {
+                            minusc=true;
+                            
+                        }
+                        if(isNaN(i.charAt(index)) == false)
+                        {
+                        
+                            numero=true;
+                        }
+                        }
+                        tamaño = true; 
+                    }
+                    if(mayusc == true && minusc == true && numero == true && tamaño == true){
+                    alert("funciona");
+                    es= true;
+                    }
+                    else{
+                        $("#pass").css("background-color","red");
+                        es= false;
+                    }
+
+
+
+
+
+
+              
+              });
+                
+            });
+
+            
+            </script>
+         <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/jquery-slim.min.js"><\/script>')</script>
+      <script src="../assets/popper.min.js"></script>
+      <script src="../dist/bootstrap.min.js"></script>
+      <script src="../assets/holder.min.js"></script>
+</body>
+</html>
